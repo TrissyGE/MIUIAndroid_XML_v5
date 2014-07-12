@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="label" format="string" />
+    <attr name="clickable" format="boolean" />
+    <attr name="listItemDownload" format="reference" />
+    <attr name="listItemFavorite" format="reference" />
+    <attr name="listItemPlayIndicator" format="reference" />
+    <attr name="listItemVod" format="reference" />
+    <attr name="color50Transparent" format="reference" />
+    <attr name="color80Transparent" format="reference" />
+    <attr name="listCollect" format="reference" />
+    <attr name="curve_color" format="color" />
+    <attr name="curve_shadow_color" format="color" />
+    <attr name="curve_shadow_radius" format="float" />
+    <attr name="summaryOn" format="string" />
+    <attr name="summaryOff" format="string" />
+    <attr name="progressKey" format="string" />
+    <attr name="title" format="string" />
+    <attr name="minName" format="string" />
+    <attr name="maxName" format="string" />
+    <attr name="minValue" format="integer" />
+    <attr name="maxValue" format="integer" />
+    <attr name="progressUnit" format="integer" />
+    <attr name="convertType">
+        <enum name="raw" value="0" />
+        <enum name="size" value="1" />
+        <enum name="duration" value="2" />
+        <enum name="constant" value="3" />
+    </attr>
+    <attr name="constantValue" format="string" />
+    <attr name="currentPrefix" format="string" />
+    <attr name="layout_gravity">
+        <flag name="top" value="0x00000030" />
+        <flag name="bottom" value="0x00000050" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="center" value="0x00000011" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="start" value="0x00800003" />
+        <flag name="end" value="0x00800005" />
+    </attr>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_calculator_padding_top">40.0dip</dimen>
+    <dimen name="wheel_margin_horizontal">45.0dip</dimen>
+    <dimen name="wheel_margin_left">62.0dip</dimen>
+    <dimen name="wheel_small_margin_horizontal">20.0dip</dimen>
+    <dimen name="file_name_layout_margin_left">55.0dip</dimen>
+    <dimen name="file_name_layout_margin_top">39.0dip</dimen>
+    <dimen name="file_name_width">220.0dip</dimen>
+    <dimen name="file_name_height">25.0dip</dimen>
+    <dimen name="time_padding_horizontal">10.0dip</dimen>
+    <dimen name="play_seek_bar_padding_horizontal">10.0dip</dimen>
+    <dimen name="no_sdcard_toast_margin_bottom">90.0dip</dimen>
+    <dimen name="tape_wheel_inner_radius">44.0dip</dimen>
+    <dimen name="tape_wheel_outer_radius">75.0dip</dimen>
+    <dimen name="seek_bar_padding_top">3.0dip</dimen>
+    <dimen name="seek_bar_padding_top_preview">14.0dip</dimen>
+    <dimen name="calculator_marginleft">30.0dip</dimen>
+    <dimen name="seek_bar_height">32.0dip</dimen>
+    <dimen name="download_item_min_height">80.0dip</dimen>
+</resources>

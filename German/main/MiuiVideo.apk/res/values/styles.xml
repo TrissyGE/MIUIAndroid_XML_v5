@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextViewStyle" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_normal_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ListViewStyle" parent="@*android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/item_bg_selector</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+    </style>
+    <style name="ButtonStyle" parent="@miui:style/V5.Widget.Button">
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+    <style name="GridViewStyle" parent="@*android:style/Widget.GridView">
+        <item name="android:listSelector">@null</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+    </style>
+    <style name="EditTextStyle" parent="@*android:style/Widget.EditText">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:padding">@dimen/comment_edittext_padding</item>
+    </style>
+    <style name="ProgressBar.Small" parent="@*android:style/Widget.ProgressBar.Small" />
+    <style name="ProgressBar.Medium" parent="@*android:style/Widget.ProgressBar" />
+    <style name="ActionBarStyle.HomeActionBarTitle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="ActionModeStyle.HomeActionModeStyle" parent="@miui:style/V5.Widget.ActionMode">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="ActionBarStyle.ChannelActionBarTitle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="ActionBarStyle.ActionBarTitle" parent="@miui:style/V5.Widget.ActionBar" />
+    <style name="ActionBarStyle.MediaDetailActionBarMovableTitle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:height">@dimen/detail_title_height</item>
+    </style>
+    <style name="ActionBarMovableLayoutStyle" parent="@miui:style/V5.Widget.ActionBarMovableLayout">
+        <item name="miui:v5_initial_motion">-1.0px</item>
+    </style>
+    <style name="ActionBarStyle.CommentActionBarTitle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:height">@dimen/comment_titlebar_height</item>
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="ActionBarStyle.SearchActionBarTitle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="AppBaseTheme" parent="@*android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="LiveTitleTv">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?miui:v5_title_text_color</item>
+        <item name="android:shadowColor">?miui:v5_title_text_shadow</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">5.0</item>
+        <item name="android:shadowRadius">10.0</item>
+    </style>
+    <style name="AlphaFastIndexerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="miui:indexerBackground">@drawable/alphabet_indexer_bg</item>
+        <item name="miui:indexerTextColor">@color/white_30_transparent</item>
+        <item name="miui:overlayBackground">@drawable/alphabet_indexer_overlay</item>
+        <item name="miui:overlayMarginTop">@dimen/alphabet_indexer_overlay_margin_top</item>
+    </style>
+    <style name="PickerListView" parent="@miui:style/V5.Widget.ListView">
+        <item name="android:layout_gravity">top|left|center</item>
+    </style>
+    <style name="popup_left_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_enter_from_left</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_out_to_left</item>
+    </style>
+    <style name="DefaultTheme" parent="@miui:style/V5.Theme.Dark">
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="v5_editmode_hide_icon">@drawable/v5_editmode_hide_button_selector</item>
+        <item name="v5_editmode_unhide_icon">@drawable/v5_editmode_unhide_button_selector</item>
+    </style>
+    <style name="HomeTheme" parent="@style/DefaultTheme">
+        <item name="android:seekBarStyle">@*android:style/Widget.Holo.Light.SeekBar</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle.HomeActionBarTitle</item>
+        <item name="miui:v5_action_bar_title_layout">@layout/home_action_bar_title_item</item>
+    </style>
+    <style name="ChannelTheme" parent="@style/DefaultTheme">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.ChannelActionBarTitle</item>
+    </style>
+    <style name="Theme.ActionBarTitle" parent="@style/DefaultTheme">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.ActionBarTitle</item>
+    </style>
+    <style name="MediaDetailTheme" parent="@miui:style/V5.Theme.Dark.ActionBarMovable">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.MediaDetailActionBarMovableTitle</item>
+        <item name="miui:v5_action_bar_title_layout">@layout/media_detail_title_item</item>
+        <item name="miui:actionBarMovableLayoutStyle">@style/ActionBarMovableLayoutStyle</item>
+    </style>
+    <style name="CommentTheme" parent="@style/DefaultTheme">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.CommentActionBarTitle</item>
+    </style>
+    <style name="SearchTheme" parent="@style/DefaultTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle.SearchActionBarTitle</item>
+        <item name="miui:v5_action_bar_title_layout">@layout/rewrite_v5_search_title_bar</item>
+        <item name="miui:v5_title_bar_back_button_search_mode">?android:homeAsUpIndicator</item>
+        <item name="miui:v5_title_bar_bg_search_mode">@drawable/search_edit_title_bg</item>
+    </style>
+    <style name="WebTheme" parent="@style/DefaultTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:scrollbarThumbHorizontal">@miui:drawable/v5_scrollbar_handle_horizontal_light</item>
+        <item name="android:scrollbarThumbVertical">@miui:drawable/v5_scrollbar_handle_vertical_light</item>
+        <item name="miui:v5_bottom_bar_icon_bg">@miui:drawable/v5_bottom_bar_icon_bg_light</item>
+    </style>
+    <style name="LiveTheme" parent="@style/ChannelTheme">
+        <item name="android:seekBarStyle">@*android:style/Widget.Holo.Light.SeekBar</item>
+    </style>
+    <style name="VideoViewTheme" parent="@style/LiveTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="miui:v5_no_rounded_corners">true</item>
+    </style>
+    <style name="buffer_dialog_style" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="menu_popup_anim_style_vertical" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/vp_menu_popup_enter_vertical</item>
+        <item name="android:windowExitAnimation">@anim/vp_menu_popup_exit_vertical</item>
+    </style>
+    <style name="vp_listview_textview_style_v5">
+        <item name="android:textSize">@dimen/sub_option_menu_listview_item_textview_size</item>
+        <item name="android:textColor">@color/option_menu_listview_textview_text_color_v5</item>
+    </style>
+    <style name="vp_top_status_bar_media_name_textview_style_v5">
+        <item name="android:textSize">@dimen/top_status_bar_media_name_textview_font_size_v5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vp_white</item>
+    </style>
+    <style name="vp_top_status_bar_sub_title_textview_style_v5">
+        <item name="android:textSize">13.5dip</item>
+        <item name="android:textColor">@color/vp_white</item>
+    </style>
+    <style name="vp_loading_buffering_textview_style_v5">
+        <item name="android:textSize">@dimen/loading_buffering_textview_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#d9ffffff</item>
+    </style>
+    <style name="vp_loading_buffering_to_be_play_textview_style_v5">
+        <item name="android:textSize">@dimen/loading_buffering_to_be_play_textview_font_size</item>
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+    <style name="v5_no_round_activity_theme" parent="@*android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="miui:v5_no_rounded_corners">true</item>
+    </style>
+</resources>

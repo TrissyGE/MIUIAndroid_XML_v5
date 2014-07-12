@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Light" parent="@miui:style/V5.Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Light.Title" parent="@miui:style/V5.Theme.Light" />
+    <style name="Theme.Light.ActionBar.NoTitle" parent="@miui:style/V5.Theme.Light.ActionBar.NoTitle" />
+    <style name="Theme.Light.NoTitle" parent="@miui:style/V5.Theme.Light.NoTitle" />
+    <style name="Theme.Light.Conversation" parent="@style/Theme.Light.ActionBar.NoTitle">
+        <item name="android:windowBackground">@drawable/conversation_bg</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme.Light.Dialog" parent="@miui:style/V5.Theme.Light.Dialog" />
+    <style name="Theme.Light.Dialog.NoTitle" parent="@miui:style/V5.Theme.Light.Dialog.NoTitle" />
+    <style name="Theme.Light.Translucent" parent="@miui:style/V5.Theme.Light.Translucent" />
+    <style name="Theme.Light.Translucent.NoTitle" parent="@miui:style/V5.Theme.Light.Translucent.NoTitle" />
+    <style name="Theme.Light.Picker.ActionBar" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="Theme.Light.Picker" parent="@miui:style/V5.Theme.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/Theme.Light.Picker.ActionBar</item>
+    </style>
+    <style name="ListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@miui:drawable/v5_list_view_item_bg_light</item>
+        <item name="android:paddingLeft">@dimen/list_item_padding_outer</item>
+        <item name="android:paddingTop">@dimen/list_item_padding_outer_v</item>
+        <item name="android:paddingRight">@dimen/list_item_padding_outer</item>
+        <item name="android:paddingBottom">@dimen/list_item_padding_outer_v</item>
+    </style>
+    <style name="ListItem.NewMessagePopup" parent="@style/ListItem">
+        <item name="android:background">@drawable/new_message_popup_item_bg</item>
+    </style>
+    <style name="TextAppearance" parent="@miui:style/V5.TextAppearance" />
+    <style name="TextAppearance.List.Primary" parent="@miui:style/V5.TextAppearance.List.Primary" />
+    <style name="TextAppearance.List.Primary.Highlight" parent="@style/TextAppearance.List.Primary">
+        <item name="android:textColor">@color/highlight_text</item>
+        <item name="android:textColorLink">@color/highlight_text</item>
+    </style>
+    <style name="TextAppearance.List.Primary.Normal" parent="@style/TextAppearance.List.Primary">
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.List.Primary.Normal.Grey" parent="@style/TextAppearance.List.Primary.Normal">
+        <item name="android:textColor">@miui:color/v5_secondary_text_light</item>
+    </style>
+    <style name="TextAppearance.List.Secondary" parent="@miui:style/V5.TextAppearance.List.Secondary" />
+    <style name="TextAppearance.List.Secondary.Highlight" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@color/highlight_text</item>
+        <item name="android:textColorLink">@color/highlight_text</item>
+    </style>
+    <style name="TextAppearance.List.Secondary.Black" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@miui:color/v5_primary_text_light</item>
+    </style>
+    <style name="TextAppearance.List.Secondary.White" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@miui:color/v5_primary_text_dark</item>
+    </style>
+    <style name="TextAppearance.List.Secondary.Grey" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@miui:color/v5_secondary_text_light</item>
+    </style>
+    <style name="TextAppearance.Card.Primary" parent="@style/TextAppearance.List.Primary">
+        <item name="android:textColor">@color/text_color_card_primary</item>
+    </style>
+    <style name="TextAppearance.Card.Secondary" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@color/text_color_card_secondary</item>
+    </style>
+    <style name="TextAppearance.List.EmptyView" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@miui:color/v5_secondary_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Title" parent="@miui:style/V5.TextAppearance.Title.Medium" />
+    <style name="TextAppearance.Title.Secondary" parent="@miui:style/V5.TextAppearance.Title.Medium.Secondary" />
+    <style name="TextAppearance.MxRecommend" parent="@miui:style/V5.TextAppearance.Title.Medium.Secondary">
+        <item name="android:shadowColor">@null</item>
+    </style>
+    <style name="TextAppearance.DialogTitle" parent="@miui:style/V5.TextAppearance.DialogTitle" />
+    <style name="TextAppearance.DialogTitle.Secondary" parent="@style/TextAppearance.DialogTitle">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_list_secondary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.MessageBody" parent="@style/TextAppearance">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_primary</item>
+        <item name="android:textColorLink">@color/link_text_color</item>
+    </style>
+    <style name="TextAppearance.MessageBody.In" parent="@style/TextAppearance.MessageBody">
+        <item name="android:textColor">@color/message_text_in_color</item>
+    </style>
+    <style name="TextAppearance.MessageBody.Out" parent="@style/TextAppearance.MessageBody">
+        <item name="android:textColor">@color/message_text_out_color</item>
+    </style>
+    <style name="TextAppearance.MessageBody.Highlight" parent="@style/TextAppearance.MessageBody">
+        <item name="android:textColor">@color/highlight_text</item>
+        <item name="android:textColorLink">@color/highlight_text</item>
+    </style>
+    <style name="TextAppearance.MessageSubject" parent="@miui:style/V5.TextAppearance.List.Primary">
+        <item name="android:textColorLink">@color/link_text_color</item>
+    </style>
+    <style name="TextAppearance.MessageSubject.In" parent="@style/TextAppearance.MessageSubject">
+        <item name="android:textColor">@color/message_text_in_color</item>
+    </style>
+    <style name="TextAppearance.MessageSubject.Out" parent="@style/TextAppearance.MessageSubject">
+        <item name="android:textColor">@color/message_text_out_color</item>
+    </style>
+    <style name="TextAppearance.MessageSubject.Highlight" parent="@style/TextAppearance.MessageSubject">
+        <item name="android:textColor">@color/highlight_text</item>
+        <item name="android:textColorLink">@color/highlight_text</item>
+    </style>
+    <style name="TextAppearance.MessageBody.Secondary" parent="@style/TextAppearance.MessageBody">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">@miui:color/v5_secondary_text_light</item>
+    </style>
+    <style name="TextAppearance.MessageDesc" parent="@miui:style/V5.TextAppearance.Small">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_memo</item>
+    </style>
+    <style name="TextAppearance.MessageDesc.Date" parent="@style/TextAppearance.MessageDesc">
+        <item name="android:textSize">@dimen/text_font_size_tiny</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@miui:color/v5_primary_text_dark</item>
+    </style>
+    <style name="TextAppearance.MessageDesc.Black" parent="@style/TextAppearance.MessageDesc">
+        <item name="android:textColor">@miui:color/v5_primary_text_light</item>
+    </style>
+    <style name="TextAppearance.MessageDesc.Solid" parent="@style/TextAppearance.MessageDesc">
+        <item name="android:textColor">@color/text_color_secondary</item>
+    </style>
+    <style name="TextAppearance.MessageDesc.BookmarkDate" parent="@style/TextAppearance.MessageDesc">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_list_secondary</item>
+    </style>
+    <style name="TextAppearance.MessageCounter" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@miui:color/v5_secondary_text_light</item>
+    </style>
+    <style name="TextAppearance.MessageCounter.White" parent="@style/TextAppearance.MessageCounter">
+        <item name="android:textColor">@miui:color/v5_primary_text_dark</item>
+    </style>
+    <style name="TextAppearance.FlatshowTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/flatshow_title_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.FlatshowTitle.Highlight" parent="@style/TextAppearance.FlatshowTitle">
+        <item name="android:textColor">@color/highlight_text</item>
+        <item name="android:textColorLink">@color/highlight_text</item>
+    </style>
+    <style name="TextAppearance.FlatshowSubTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+    </style>
+    <style name="TextAppearance.EditText" parent="@miui:style/V5.TextAppearance.EditText" />
+    <style name="TextAppearance.EditText.Mms" parent="@style/TextAppearance.EditText" />
+    <style name="TextAppearance.EditText.Mms.NicknameSpan" parent="@style/TextAppearance.EditText.Mms">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_small</item>
+        <item name="android:textColor">@color/nickname_placeholder_fg</item>
+    </style>
+    <style name="TextAppearance.EditText.Recipient" parent="@style/TextAppearance.EditText" />
+    <style name="TextAppearance.EditText.Recipient.Secondary" parent="@style/TextAppearance.EditText.Recipient">
+        <item name="android:textColor">@miui:color/v5_secondary_text_light</item>
+    </style>
+    <style name="TextAppearance.FlatshowPageNo" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/flatshow_pageno_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/flatshow_pageno_text_color</item>
+        <item name="android:shadowColor">@color/flatshow_pageno_text_shadow_color</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="MessageButton">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MessageButton.Alert" parent="@style/MessageButton">
+        <item name="android:textColor">@color/message_button_alert_text_color</item>
+        <item name="android:background">@drawable/alert_btn</item>
+    </style>
+    <style name="MessageButton.Common" parent="@style/MessageButton">
+        <item name="android:background">@drawable/common_btn</item>
+    </style>
+    <style name="UnreadMessageCount">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@miui:color/v5_primary_text_dark</item>
+    </style>
+    <style name="HighlightedSendButton" parent="@miui:style/V5.TextAppearance.Button">
+        <item name="android:textSize">@dimen/send_button_text_font_size</item>
+        <item name="android:textColor">@color/highlight_text</item>
+    </style>
+    <style name="NormalTextSendButton" parent="@miui:style/V5.TextAppearance.Button">
+        <item name="android:textSize">@dimen/send_button_text_font_size</item>
+    </style>
+    <style name="loading_dialog">
+        <item name="android:windowBackground">@drawable/loading_dialog_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowEnterAnimation">@*android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@*android:anim/fade_out</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

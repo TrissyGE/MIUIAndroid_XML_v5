@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance" parent="@*android:attr/textAppearance">
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="TextAppearance.SectionTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+    </style>
+    <style name="TextAppearance.Content" parent="@style/TextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="TextAppearance.Medium" parent="@style/TextAppearance">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="TextAppearance.Small" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="ActionBar.Title" parent="@miui:style/V5.Widget.ActionBar.Solid.Settings">
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+    </style>
+    <style name="Theme.Title" parent="@miui:style/V5.Theme.Light.Settings">
+        <item name="android:actionBarStyle">@style/ActionBar.Title</item>
+        <item name="android:homeAsUpIndicator">@drawable/action_bar_empty_logo</item>
+    </style>
+</resources>

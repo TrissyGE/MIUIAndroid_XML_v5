@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chip">#ffdddddd</color>
+    <color name="item_root_pressed">#33cccccc</color>
+    <color name="item_root_focused">#66cccccc</color>
+</resources>

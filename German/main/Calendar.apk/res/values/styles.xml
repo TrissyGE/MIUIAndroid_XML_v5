@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MinusButton">
+        <item name="android:background">@miui:drawable/v5_btn_inline_delete_light</item>
+        <item name="android:layout_marginRight">@dimen/page_margin_small</item>
+    </style>
+    <style name="MonthView_DayLabel">
+        <item name="android:textAppearance">@style/TextAppearance.MonthView_DayLabel</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">29.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MonthView_MiniMonthLabel">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/month_mini_day_number</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+    </style>
+    <style name="TextAppearance" parent="@miui:style/V5.TextAppearance">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_marginRight">12.0dip</item>
+    </style>
+    <style name="TextAppearance.SelectCalendar_Name" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="TextAppearance.MonthView_MiniDayLabel" parent="@style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/month_other_month_day_number</item>
+    </style>
+    <style name="TextAppearance.MonthView_DayLabel" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/day_label_text_size</item>
+        <item name="android:textColor">@color/month_day_names_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+    </style>
+    <style name="TextAppearance.AgendaView_ValueLabel" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Label" parent="@style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">top|left|center</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">-16.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Button" parent="@style/TextAppearance.EditEvent_Label">
+        <item name="android:textColor">#ff777777</item>
+    </style>
+    <style name="TextAppearance.EditEvent_LabelSmall" parent="@style/TextAppearance.EditEvent_Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Small" parent="@style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="TextAppearance.Container_Label" parent="@style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/event_info_label_color</item>
+        <item name="android:layout_marginLeft">13.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="TextAppearance.EditEvent" parent="@miui:style/V5.TextAppearance.EditText">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Value" parent="@style/TextAppearance.EditEvent">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_marginRight">12.0dip</item>
+    </style>
+    <style name="TextAppearance.EditEvent.Grouped" parent="@style/TextAppearance.EditEvent_Value">
+        <item name="android:background">?miui:v5_group_item_bg</item>
+    </style>
+    <style name="TextAppearance.EditEventCalSpinner" parent="@style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="TextAppearance.EditEvent_CalSpinnerValue" parent="@style/TextAppearance.EditEventCalSpinner">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Spinner" parent="@miui:style/V5.Widget.Spinner">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+        <item name="android:layout_marginBottom">1.0dip</item>
+    </style>
+    <style name="TextAppearance.EditEvent_SpinnerButton" parent="@miui:style/V5.Widget.Spinner">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+        <item name="android:layout_marginBottom">1.0dip</item>
+    </style>
+    <style name="TextAppearance.EditEvent_homeTime" parent="@style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@*android:color/darker_gray</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.EventInfo_Label" parent="@style/TextAppearance">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:paddingLeft">16.0dip</item>
+    </style>
+    <style name="TextAppearance.Date_Range_Title" parent="@style/TextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/calendar_date_range_color</item>
+    </style>
+    <style name="CalendarTheme" parent="@miui:style/V5.Theme.Light">
+        <item name="android:startYear">1970</item>
+        <item name="android:endYear">2036</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/action_bar_back</item>
+        <item name="miui:v5_bottom_bar_bg">@drawable/miui_bottom_background</item>
+    </style>
+    <style name="CalendarTheme.NoTitle" parent="@style/CalendarTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CalendarTheme.Main" parent="@style/CalendarTheme">
+        <item name="android:actionBarStyle">@style/MainActionBarStyle</item>
+        <item name="miui:v5_bottom_bar_top_line">@null</item>
+        <item name="miui:v5_title_bar_back_button_search_mode">@miui:drawable/v5_title_bar_back_button_light</item>
+        <item name="miui:v5_title_bar_bg_search_mode">@drawable/miui_search_bar_bg</item>
+    </style>
+    <style name="ActionBarStyle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@drawable/action_bar_bg_n</item>
+    </style>
+    <style name="CustomActionBarStyle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="MainActionBarStyle" parent="@style/CustomActionBarStyle">
+        <item name="android:height">@dimen/action_bar_height</item>
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="NewActionBarStyle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@drawable/action_bar_bg_n</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitleTextStyle</item>
+    </style>
+    <style name="ActionBarTitleTextStyle" parent="@miui:style/V5.Widget.Title">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="CalendarTheme.Search" parent="@style/CalendarTheme">
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+    <style name="CalendarTheme.Wallpaper" parent="@style/CalendarTheme">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="CalendarTheme.Event" parent="@style/CalendarTheme">
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+    <style name="CalendarTheme.NewActionBar" parent="@style/CalendarTheme">
+        <item name="android:windowBackground">@color/month_week_bg</item>
+        <item name="android:actionBarStyle">@style/NewActionBarStyle</item>
+        <item name="miui:v5_title_text_shadow">@null</item>
+    </style>
+    <style name="MultiStateButton">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="EditEventSeparator">
+        <item name="android:background">@color/edit_event_separator</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">15.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="EditEventCustomActionButton" parent="@*android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="EditEventCustomActionButtonImage">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EditEventCustomActionButtonText">
+        <item name="android:textAppearance">?android:actionMenuTextAppearance</item>
+        <item name="android:textColor">?android:actionMenuTextColor</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="WidgetDayOfWeekStyle">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">-5.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="WidgetDateStyle">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-4.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="NotificationPrimaryText" parent="@*android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="NotificationSecondaryText" parent="@*android:style/TextAppearance.Holo">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="miui_edit_event_container_style">
+        <item name="android:layout_marginLeft">@dimen/page_margin_small</item>
+        <item name="android:layout_marginTop">@dimen/page_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/page_margin_small</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="miui_radio_group">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+        <item name="android:minHeight">52.0dip</item>
+    </style>
+    <style name="miui_radio_button" parent="@miui:style/V5.Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/event_info_body_color</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WeekHeaderStyle">
+        <item name="android:background">@color/month_week_bg</item>
+        <item name="android:paddingLeft">@dimen/week_header_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/week_header_paddingRight</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/week_header_height</item>
+    </style>
+    <style name="BottomStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bottombar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/month_bottom_bar_height</item>
+    </style>
+    <style name="BottomButtonCenterStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BottomButtonTextStyle">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bottom_btn_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bottom_btn</item>
+        <item name="android:paddingBottom">-1.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BottomButtonNewEventStyle">
+        <item name="android:background">@drawable/action_new_event</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TitleBarStyle">
+        <item name="android:background">@drawable/miui_header_bg</item>
+        <item name="android:paddingLeft">@dimen/action_bar_padding_left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="TitleBarTitleMonthStyle">
+        <item name="android:textSize">@dimen/action_bar_title_month_size</item>
+        <item name="android:textColor">@color/action_bar_title_month_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/action_bar_title_month_margin_right</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="TitleBarTitleMonthLabelStyle">
+        <item name="android:textSize">@dimen/action_bar_title_month_label_size</item>
+        <item name="android:textColor">@color/action_bar_title_month_label_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/action_bar_title_month_label_margin_top</item>
+        <item name="android:layout_toRightOf">@id/action_bar_month_view</item>
+        <item name="android:layout_alignTop">@id/action_bar_month_view</item>
+    </style>
+    <style name="TitleBarTitleYearStyle">
+        <item name="android:textSize">@dimen/action_bar_title_year_size</item>
+        <item name="android:textColor">@color/action_bar_title_year_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/action_bar_title_week_number_margin_bottom</item>
+        <item name="android:layout_toRightOf">@id/action_bar_month_view</item>
+        <item name="android:layout_alignBottom">@id/action_bar_month_view</item>
+    </style>
+    <style name="TitleBarTitleWeekNumberStyle">
+        <item name="android:textSize">@dimen/action_bar_title_year_size</item>
+        <item name="android:textColor">@color/action_bar_title_year_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/action_bar_title_week_number_margin_left</item>
+        <item name="android:layout_marginBottom">@dimen/action_bar_title_week_number_margin_bottom</item>
+        <item name="android:layout_toRightOf">@id/action_bar_year_view</item>
+        <item name="android:layout_alignBottom">@id/action_bar_month_view</item>
+    </style>
+    <style name="TitleBarTodayStyle">
+        <item name="android:textSize">@dimen/action_bar_title_month_label_size</item>
+        <item name="android:textColor">@color/action_bar_title_month_label_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/action_bar_today</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/action_bar_title_today_margin_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="TitleStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="EventTitleStyle">
+        <item name="android:textSize">@dimen/event_title_size</item>
+        <item name="android:textColor">@color/event_title_color</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="EventTimeStyle">
+        <item name="android:textSize">@dimen/event_summary_size</item>
+        <item name="android:textColor">@color/event_time_color</item>
+        <item name="android:layout_marginTop">@dimen/event_summary_margin_top</item>
+    </style>
+    <style name="EventColorStyle">
+        <item name="android:layout_width">@dimen/circle_bitmap_size_small</item>
+        <item name="android:layout_height">@dimen/circle_bitmap_size_small</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="HuangliGoodTypeStyle">
+        <item name="android:textSize">@dimen/huangli_good_bad_type_size</item>
+        <item name="android:textColor">@color/huangli_good_color</item>
+    </style>
+    <style name="HuangliBadTypeStyle" parent="@style/HuangliGoodTypeStyle">
+        <item name="android:textColor">@color/huangli_bad_color</item>
+    </style>
+    <style name="HuangliGoodBadTextStyle">
+        <item name="android:textSize">@dimen/huangli_good_bad_text_size</item>
+        <item name="android:textColor">@color/huangli_good_bad_color</item>
+    </style>
+    <style name="eventInfoTitleStyle">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textColorLink">@color/event_info_headline_color</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="eventInfoSubtitleStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff747474</item>
+        <item name="android:textColorLink">@color/event_info_headline_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="eventInfoSubtitleLinearlayoutStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="eventInfoListItemStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@miui:drawable/v5_preference_item_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="eventInfoListItemPrimaryTextStyle">
+        <item name="android:textAppearance">@miui:style/V5.TextAppearance.PreferenceList</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="eventInfoListItemSecondaryTextStyle">
+        <item name="android:textAppearance">@miui:style/V5.TextAppearance.List.Secondary.Preference</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingRight">@miui:dimen/v5_preference_item_padding_inner</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableRight">@miui:drawable/arrow_right</item>
+        <item name="android:drawablePadding">4.0dip</item>
+    </style>
+    <style name="almanacDetailStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">30.0dip</item>
+        <item name="android:paddingTop">25.0dip</item>
+        <item name="android:paddingRight">30.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="solarTimeStyle">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="lunarTimeStyle">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffc33301</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15.0dip</item>
+    </style>
+    <style name="baziStyle">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffc33301</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">25.0dip</item>
+    </style>
+    <style name="dividerStyle">
+        <item name="android:background">@drawable/alanac_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="almanacLabelStyle">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff6d6d6d</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">10.0dip</item>
+    </style>
+    <style name="almanacContentStyle" parent="@style/almanacLabelStyle">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+    <style name="yiLabelStyle" parent="@style/almanacLabelStyle">
+        <item name="android:textColor">#ff2e791c</item>
+    </style>
+    <style name="yiContentStyle" parent="@style/almanacContentStyle">
+        <item name="android:textColor">#ff2e791c</item>
+    </style>
+    <style name="jiLabelStyle" parent="@style/almanacLabelStyle">
+        <item name="android:textColor">#ffc33301</item>
+    </style>
+    <style name="jiContentStyle" parent="@style/almanacContentStyle">
+        <item name="android:textColor">#ffc33301</item>
+    </style>
+    <style name="eventInfoListItemRemovableStyle" parent="@style/eventInfoListItemStyle">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="eventInfoListItemSecondarySwitchStyle" parent="@style/eventInfoListItemSecondaryTextStyle">
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_marginRight">@dimen/page_margin_small</item>
+        <item name="android:drawableRight">@null</item>
+    </style>
+    <style name="eventInfoListItemSecondarySpinnerStyle" parent="@style/eventInfoListItemSecondaryTextStyle">
+        <item name="android:gravity">right</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:drawableRight">@null</item>
+    </style>
+    <style name="eventInfoListItemSecondaryButtonStyle" parent="@style/eventInfoListItemSecondaryTextStyle">
+        <item name="android:textColor">@miui:color/v5_preference_secondary_text_light</item>
+        <item name="android:background">@null</item>
+        <item name="android:clickable">false</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+    <style name="eventInfoListItemSecondaryViewStyle" parent="@style/eventInfoListItemSecondaryTextStyle">
+        <item name="android:paddingRight">@dimen/view_event_item_padding_right</item>
+        <item name="android:drawableRight">@null</item>
+    </style>
+    <style name="EditTextStyle" parent="@style/TextAppearance.EditEvent_Value">
+        <item name="android:background">@null</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/new_event_edit_min_height</item>
+        <item name="android:capitalize">sentences</item>
+        <item name="android:inputType">textCapSentences|textAutoCorrect</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <style name="EditTextContainerStyle">
+        <item name="android:background">@miui:drawable/v5_group_item_bg_light</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/page_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/page_margin_small</item>
+    </style>
+    <style name="MultiEditTextStyle" parent="@style/EditTextStyle">
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+    <style name="widget_header_weekday_text">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WidgetMonthViewItem4">
+        <item name="android:layout_width">@dimen/widget_month_week_width</item>
+        <item name="android:layout_height">@dimen/widget_month_week_height4</item>
+    </style>
+    <style name="WidgetMonthViewItem5">
+        <item name="android:layout_width">@dimen/widget_month_week_width</item>
+        <item name="android:layout_height">@dimen/widget_month_week_height5</item>
+    </style>
+    <style name="WidgetMonthViewItem6">
+        <item name="android:layout_width">@dimen/widget_month_week_width</item>
+        <item name="android:layout_height">@dimen/widget_month_week_height6</item>
+    </style>
+    <style name="WidgetMonthViewItemToday">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="WidgetMonthViewItemDay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="WidgetMonthViewItemLunar">
+        <item name="android:textSize">8.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-4.0dip</item>
+        <item name="android:layout_below">@id/day</item>
+    </style>
+    <style name="WidgetMonthViewItemEventPoint" parent="@style/EventColorStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">-4.0dip</item>
+        <item name="android:layout_above">@id/day</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="WidgetMonthViewItemWorkDay">
+        <item name="android:textSize">8.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">-4.0dip</item>
+        <item name="android:layout_above">@id/day</item>
+    </style>
+    <style name="WidgetMonthViewEvent">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/widget_month_view_event</item>
+        <item name="android:layout_marginTop">@dimen/widget_month_view_event_marginTop</item>
+        <item name="android:listSelector">@*android:color/transparent</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+    </style>
+    <style name="WidgetMonthViewEventHeader">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/widget_month_view_event_header_height</item>
+        <item name="android:text">@string/widget_events</item>
+    </style>
+    <style name="WidgetMonthViewEventItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/widget_month_view_event_height</item>
+    </style>
+    <style name="WidgetMonthViewEventPrimary">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WidgetMonthViewEventSecondary">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WidgetMonthViewNoEvent">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/widget_month_view_event</item>
+        <item name="android:layout_marginTop">@dimen/widget_month_view_event_marginTop</item>
+        <item name="android:text">@string/widget_no_events</item>
+    </style>
+    <style name="editEventTitileBarBtnStyle">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/miui_title_button_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/miui_title_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="editEventTitileBarTitleStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/event_create</item>
+    </style>
+    <style name="Theme.Light" parent="@miui:style/V5.Theme.Light">
+        <item name="miui:v5_action_bar_tab">true</item>
+    </style>
+    <style name="Theme.Light.CalendarTabActivity" parent="@style/Theme.Light">
+        <item name="android:windowBackground">@drawable/online_window_bg</item>
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.CalendarTab</item>
+        <item name="android:homeAsUpIndicator">@drawable/action_bar_back</item>
+        <item name="miui:v5_tab_indicator_bg">@drawable/tab_indicator_bg</item>
+    </style>
+    <style name="Widget.ActionBar.CalendarTab" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:background">@drawable/action_bar_bg_n</item>
+    </style>
+    <style name="EventDetailTitle">
+        <item name="android:textAppearance">@miui:style/V5.TextAppearance.List.Primary</item>
+        <item name="android:paddingBottom">@dimen/event_detail_page_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EventDetailContent">
+        <item name="android:textAppearance">@miui:style/V5.TextAppearance.List.Secondary</item>
+        <item name="android:paddingTop">@dimen/event_detail_page_padding</item>
+        <item name="android:paddingBottom">@dimen/event_detail_page_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="V5.MovableActivityTheme" parent="@miui:style/V5.Theme.Light.ActionBarMovable">
+        <item name="android:actionBarStyle">@style/MovableActionBar</item>
+        <item name="miui:v5_bottom_bar_top_line">@null</item>
+        <item name="miui:v5_tab_indicator_bg">@null</item>
+        <item name="miui:actionBarMovableLayoutStyle">@style/MovableActionBar.LayoutStyle</item>
+    </style>
+    <style name="MovableActionBar" parent="@miui:style/V5.Widget.ActionBar.Large">
+        <item name="android:background">@null</item>
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="MovableActionBar.LayoutStyle" parent="@miui:style/V5.Widget.ActionBarMovableLayout">
+        <item name="miui:v5_over_scroll_range">@dimen/movable_over_scroll_range</item>
+        <item name="miui:v5_scroll_range">@dimen/movable_scroll_range</item>
+        <item name="miui:v5_initial_motion">@dimen/movable_scroll_range</item>
+    </style>
+    <style name="MovableActionBar.Title" parent="@miui:style/V5.TextAppearance.Title.Large">
+        <item name="android:textSize">@dimen/today_detail_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">0.0</item>
+        <item name="android:color">#ffffffff</item>
+    </style>
+    <style name="MovableActionBar.SubTitle" parent="@miui:style/V5.TextAppearance.Medium.Inverse">
+        <item name="android:textSize">@dimen/today_detail_subtitle_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="TopicListItemStyle" parent="@miui:style/V5.Widget.ListView.Item.SingleLine">
+        <item name="android:background">@drawable/topic_list_item_bg</item>
+    </style>
+    <style name="TodayDetailSectionHeader" parent="@miui:style/V5.TextAppearance.List.Secondary">
+        <item name="android:textSize">@dimen/today_detail_secondary_text_size</item>
+        <item name="android:textColor">@color/today_event_section_text_color</item>
+    </style>
+    <style name="TodayDetailEventPrimary" parent="@miui:style/V5.TextAppearance.List.Primary">
+        <item name="android:textSize">@dimen/today_detail_primary_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/today_event_primary_text_color</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TodayDetailMatchScore" parent="@style/TodayDetailEventPrimary">
+        <item name="android:textColor">@color/match_score_text_color</item>
+    </style>
+    <style name="TodayDetailEventSecondary" parent="@miui:style/V5.TextAppearance.List.Secondary">
+        <item name="android:textSize">@dimen/today_detail_secondary_text_size</item>
+        <item name="android:textColor">@color/today_event_secondary_text_color</item>
+    </style>
+    <style name="TodayDetailEventSummary" parent="@miui:style/V5.TextAppearance.List.Secondary">
+        <item name="android:textSize">@dimen/today_detail_summary_text_size</item>
+        <item name="android:textColor">@color/today_event_summary_text_color</item>
+    </style>
+    <style name="DetailHeaderTitleStyle" parent="@miui:style/V5.TextAppearance.List.Secondary">
+        <item name="android:textSize">@dimen/detail_header_title_size</item>
+        <item name="android:textColor">@color/detail_header_title_color</item>
+    </style>
+    <style name="DetailHeaderTextStyle" parent="@miui:style/V5.TextAppearance.List.Secondary">
+        <item name="android:textSize">@dimen/detail_header_text_size</item>
+        <item name="android:textColor">@color/detail_header_text_color</item>
+    </style>
+    <style name="TopicRecommendBottomButton">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="AlertActivityStyle" parent="@miui:style/V5.Theme.Light.NoTitle">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@miui:style/V5.Widget.DialogTitle</item>
+        <item name="android:windowAnimationStyle">@miui:style/V5.Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="RecipientEditTextView" parent="@*android:attr/autoCompleteTextViewStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra</item>
+        <item name="android:inputType">textMultiLine|textEmailAddress</item>
+        <item name="android:imeOptions">actionNext|flagNoFullscreen</item>
+        <item name="android:dropDownHorizontalOffset">-16.0dip</item>
+        <item name="android:dropDownVerticalOffset">-6.0dip</item>
+    </style>
+</resources>

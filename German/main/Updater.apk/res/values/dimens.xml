@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_padding">13.299988dip</dimen>
+    <dimen name="common_padding">13.299988dip</dimen>
+    <dimen name="common_padding_medium">6.6999817dip</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider">1.0px</dimen>
+    <dimen name="grid_gap">2.6999817dip</dimen>
+    <dimen name="text_size_ultra_huge">36.0sp</dimen>
+    <dimen name="text_size_super_huge">22.0sp</dimen>
+    <dimen name="text_size_large">17.0sp</dimen>
+    <dimen name="text_size_medium">15.0sp</dimen>
+    <dimen name="text_size_small">13.0sp</dimen>
+    <dimen name="text_size_16sp">16.0sp</dimen>
+    <dimen name="text_size_content_hint">15.0sp</dimen>
+    <dimen name="text_size_giftdetail_available">75.0sp</dimen>
+    <dimen name="giftcard_list_top_padding">9.0dip</dimen>
+    <dimen name="giftcard_list_bottom_padding">70.0dip</dimen>
+    <dimen name="choose_other_unlock_text_size">18.0sp</dimen>
+    <dimen name="content_hint_bottom_margin">15.0dip</dimen>
+    <dimen name="lockpattern_header_margin_top">15.0dip</dimen>
+    <dimen name="lockpattern_footer_margin_bottom">35.0dip</dimen>
+    <dimen name="camera_frame_rect_height">65.0dip</dimen>
+    <dimen name="camera_frame_rect_width">350.0dip</dimen>
+    <dimen name="text_size_camera_number">28.0sp</dimen>
+    <dimen name="text_size_camera_prompt">25.0sp</dimen>
+    <dimen name="text_size_super_huge_more">28.0sp</dimen>
+    <dimen name="detail_divider_len">210.0dip</dimen>
+    <dimen name="record_detail_title_margin_top">57.0dip</dimen>
+    <dimen name="record_detail_orderNo_margin_top">14.0dip</dimen>
+    <dimen name="record_detail_margin_left">26.0dip</dimen>
+    <dimen name="giftcard_detail_margin_left">57.0dip</dimen>
+    <dimen name="notification_padding_left">7.5dip</dimen>
+    <dimen name="notification_padding_right">7.5dip</dimen>
+    <dimen name="notification_content_margin_left_to_icon">15.0dip</dimen>
+    <dimen name="notification_content_margin_left">72.5dip</dimen>
+    <dimen name="notification_height">65.0dip</dimen>
+    <dimen name="notification_content_to_icon_length">15.0dip</dimen>
+    <dimen name="notification_bigpicture_height">100.0dip</dimen>
+</resources>

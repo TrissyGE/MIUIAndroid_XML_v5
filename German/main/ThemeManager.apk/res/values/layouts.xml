@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="edit_mode_title">@miui:layout/v5_edit_mode_title_bar_with_default</item>
+</resources>

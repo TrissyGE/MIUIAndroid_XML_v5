@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_suggest_lines_landscape">5</integer>
+    <integer name="max_suggest_lines_portrait">4</integer>
+    <integer name="max_tabs">16</integer>
+    <integer name="tab_animation_duration">200</integer>
+    <integer name="most_visits_limit">10</integer>
+    <integer name="comboViewFadeInDuration">400</integer>
+    <integer name="tabFadeDuration">300</integer>
+    <integer name="max_bookmark_columns">5</integer>
+    <integer name="titlebar_animation_duration">300</integer>
+    <integer name="bookmark_columns_portrait">3</integer>
+    <integer name="bookmark_columns_landscape">5</integer>
+    <integer name="bookmark_visible_rows_portrait">3</integer>
+    <integer name="bookmark_group_view_height">100</integer>
+    <integer name="bookmark_border_length">1</integer>
+    <integer name="bookmark_height_width_ratio">100</integer>
+    <integer name="nav_tab_num_per_screen_portrait">2</integer>
+    <integer name="nav_tab_num_per_screen_landscape">3</integer>
+    <integer name="nav_screen_padding_top">2</integer>
+    <integer name="path_item_text_alpha_clickable">204</integer>
+    <integer name="path_item_text_alpha_unclickable">102</integer>
+    <integer name="indicated_text_size">16</integer>
+    <integer name="animation_duration">400</integer>
+</resources>

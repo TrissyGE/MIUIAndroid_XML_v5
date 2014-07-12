@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="color" name="text_color_secondary">@miui:color/v5_secondary_text_color_light</item>
+    <item type="color" name="text_color_primary_inverse">@*android:color/white</item>
+    <item type="color" name="text_color_secondary_inverse">@*android:color/white</item>
+    <item type="color" name="text_color_disabled">@miui:color/v5_text_color_disable_light</item>
+    <color name="text_color_highlight">#ffff7e00</color>
+    <color name="text_color_highlight_disabled">#80ff7e00</color>
+    <item type="color" name="text_color_highlight_inverse">@color/text_color_primary_inverse</item>
+    <item type="color" name="text_color_message_in">@miui:color/v5_primary_text_color_light</item>
+    <item type="color" name="text_color_message_in_pressed">@miui:color/v5_text_color_pressed_light</item>
+    <item type="color" name="text_color_message_out">@miui:color/v5_primary_text_color_light</item>
+    <item type="color" name="text_color_message_out_pressed">@miui:color/v5_text_color_pressed_light</item>
+    <color name="text_color_attachment_type">#ff4d4d4d</color>
+    <item type="color" name="text_color_recent_contact">@miui:color/v5_primary_text_color_light</item>
+    <item type="color" name="text_color_card_primary">@miui:color/v5_primary_text_color_light</item>
+    <item type="color" name="text_color_card_secondary">@miui:color/v5_secondary_text_color_light</item>
+    <item type="color" name="nickname_placeholder_fg">@*android:color/white</item>
+    <color name="nickname_placeholder_bg">#ff50a01e</color>
+    <item type="color" name="conversation_unread_text_color">@color/text_color_highlight</item>
+    <item type="color" name="fetion_prefix_text_color">@color/text_color_secondary</item>
+    <item type="color" name="fetion_prefix_text_color_dark">@miui:color/v5_secondary_text_color_dark</item>
+    <item type="color" name="message_button_alert_text_color">@miui:color/v5_primary_text_color_light</item>
+    <color name="flatshow_pageno_text_color">#ffffffff</color>
+    <color name="flatshow_pageno_text_shadow_color">#80000000</color>
+    <color name="background">#dd000000</color>
+    <color name="link_text_color_normal">#ff0f5ac8</color>
+    <color name="private_entry_background_color">#ff000000</color>
+    <color name="float_notification_button_color_n">#ffffffff</color>
+    <color name="float_notification_button_color_p">#ffffffff</color>
+    <color name="float_notification_button_color_disable">#ffbdbdbd</color>
+</resources>

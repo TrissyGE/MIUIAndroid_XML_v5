@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="main_traffic_used_unit">#ffaeafb0</color>
+    <color name="main_tab_button_text_selected">#ffffffff</color>
+    <color name="main_tab_button_text_unselected">#ff939395</color>
+    <color name="main_traffic_number">#ffeeeeee</color>
+    <color name="main_warning_text">#ffce3017</color>
+    <color name="firewall_button_text_green">#ff669900</color>
+    <color name="firewall_button_text_gray">#ff000aaa</color>
+    <color name="firewall_button_text_red">#ffcc0000</color>
+    <color name="text_color_orange">#fffb6003</color>
+    <color name="primary_color_inverse">#e5ffffff</color>
+    <color name="traffic_saving_primary">#ff5fab1b</color>
+</resources>

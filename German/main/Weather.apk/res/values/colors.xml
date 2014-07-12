@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_background">#00000000</color>
+    <color name="selected">#00000000</color>
+    <color name="miui_separator_color">#4c000000</color>
+    <color name="information_warning">#ffff7e00</color>
+    <color name="aqi_good_color">#ff5cbc06</color>
+    <color name="aqi_light_pollution_color">#ffff8b34</color>
+    <color name="aqi_unhealthy_color">#ffff8b34</color>
+    <color name="aqi_dangerous_color">#ffc92914</color>
+    <color name="aqi_hazardous_color">#ffc92914</color>
+    <color name="aqi_color_break">#ffeeee00</color>
+    <color name="aqi_color_break_city_name">#ff000000</color>
+    <color name="aqi_text_color">#ffb2b2b2</color>
+    <color name="trend_view_text_color">#ff5a5a5a</color>
+    <color name="trend_view_weather_text_color">#ff969798</color>
+    <color name="trend_view_yellow_color">#fff66200</color>
+    <color name="trend_view_blue_color">#ff298adc</color>
+    <color name="trend_view_default_color">#ff000000</color>
+    <color name="listitem_weather_cycle_root_bg_color">#ff2b98e0</color>
+    <color name="find_city_arleady_have_text_color">#50000000</color>
+</resources>

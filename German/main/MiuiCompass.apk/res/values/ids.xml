@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="view_compass">false</item>
+    <item type="id" name="compass_layout">false</item>
+    <item type="id" name="pressure_altitude">false</item>
+    <item type="id" name="pressure_show">false</item>
+    <item type="id" name="altitude_show">false</item>
+    <item type="id" name="layout_direction">false</item>
+    <item type="id" name="direction_arrow">false</item>
+    <item type="id" name="compass_pointer">false</item>
+    <item type="id" name="compass_values">false</item>
+    <item type="id" name="layout_angle">false</item>
+    <item type="id" name="guide_animation">false</item>
+    <item type="id" name="guide_toast">false</item>
+    <item type="id" name="bottom_unit">false</item>
+    <item type="id" name="textview_location_latitude">false</item>
+    <item type="id" name="textview_location_latitude_degree">false</item>
+    <item type="id" name="textview_location_longitude">false</item>
+    <item type="id" name="textview_location_longitude_degree">false</item>
+    <item type="id" name="bottom_unit_pressure">false</item>
+    <item type="id" name="textview_pressure">false</item>
+    <item type="id" name="bottom_unit_altitude">false</item>
+    <item type="id" name="textview_altitude">false</item>
+    <item type="id" name="tutorial_layout">false</item>
+    <item type="id" name="tutorial_view">false</item>
+    <item type="id" name="menu_calibrate_altitude">false</item>
+    <item type="id" name="menu_calibrate">false</item>
+</resources>

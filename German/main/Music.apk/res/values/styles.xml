@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LandPageTheme" />
+    <style name="NowplayingPageTheme" />
+    <style name="MainBrowserTheme" />
+    <style name="PickerActivityTheme" />
+    <style name="EqualizerActivityTheme" />
+    <style name="IconPanelStyle" />
+    <style name="DiracEqualizerStyle" />
+    <style name="KTVAlertStyle" />
+    <style name="TitlePrimaryText">
+        <item name="android:textSize">@dimen/title_primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/title_primary_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/black_37_transparent</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">4.0</item>
+        <item name="android:shadowRadius">9.0</item>
+    </style>
+    <style name="TitleSecondaryText">
+        <item name="android:textSize">@dimen/title_secondary_text</item>
+        <item name="android:textColor">@color/title_secondary_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HorizontalTitleSecondaryText">
+        <item name="android:textSize">@dimen/title_secondary_text</item>
+        <item name="android:textColor">@color/horizontal_title_secondary_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="PickerListView" parent="@miui:style/V5.Widget.ListView">
+        <item name="android:layout_gravity">top|left|center</item>
+    </style>
+    <style name="SymPickerListView" parent="@style/PickerListView">
+        <item name="android:paddingRight">@dimen/spacing_to_border</item>
+    </style>
+    <style name="ItemPrimaryText" parent="@miui:style/V5.TextAppearance.List.Primary">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ItemSecondaryText" parent="@miui:style/V5.TextAppearance.List.Secondary">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="PickerItemStyle" parent="@miui:style/V5.Widget.ListView.Item.DoubleLine" />
+    <style name="BottomBarText">
+        <item name="android:textSize">@dimen/bottom_bar_text</item>
+        <item name="android:textColor">@color/bottom_bar_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="ItemPrimaryIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="SearchHistoryListStyle">
+        <item name="android:layout_gravity">top|left|center</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_to_border</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@drawable/picker_list_divider</item>
+        <item name="android:footerDividersEnabled">false</item>
+    </style>
+    <style name="IndicatorTextStyle">
+        <item name="android:textSize">@dimen/nowplaying_page_time_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white_30_transparent</item>
+        <item name="android:layout_marginTop">-2.0dip</item>
+    </style>
+    <style name="LyricHighLightStyle" parent="@miui:style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/lyric_high_light_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/lyric_current_margin_top</item>
+    </style>
+    <style name="LyricNormalStyle" parent="@miui:style/V5.TextAppearance.Title">
+        <item name="android:textSize">@dimen/lyric_normal_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white_40_transparent</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="EqualizerSeekBarStyle">
+        <item name="android:paddingTop">28.0dip</item>
+        <item name="android:paddingBottom">28.0dip</item>
+        <item name="android:progressDrawable">@*android:color/transparent</item>
+        <item name="android:thumb">@drawable/equalizer_thumb</item>
+    </style>
+    <style name="ToolIconStyle">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="BatchSelectionCheckBoxStyle" parent="@miui:style/V5.Widget.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MainPrimaryText" parent="@miui:style/V5.TextAppearance.Title">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_main_page_title</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/black_70_transparent</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="MainSecondaryText">
+        <item name="android:textSize">@dimen/main_secondary_text</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/black_70_transparent</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">5.0</item>
+    </style>
+    <style name="NowplayingPrimaryText" parent="@miui:style/V5.TextAppearance.Title.Large">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:maxWidth">@dimen/item_text_width</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="NowplayingSecondaryText" parent="@miui:style/V5.TextAppearance.Title.Large.Secondary">
+        <item name="android:textSize">@dimen/nowplaying_secondary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxWidth">@dimen/item_text_width</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MainItemPrimaryText">
+        <item name="android:textSize">@dimen/main_item_primary_text</item>
+        <item name="android:textColor">@color/main_item_primary_text</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MainItemSecondaryText">
+        <item name="android:textSize">@dimen/main_item_secondary_text</item>
+        <item name="android:textColor">@color/main_item_secondary_text</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MarqueeTextStyle">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="TrackDetailText">
+        <item name="android:textSize">@dimen/item_secondary_text</item>
+        <item name="android:textColor">@color/white_70_transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AlphaFastIndexerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="miui:indexerBackground">@drawable/alphabet_indexer_bg</item>
+        <item name="miui:indexerTextColor">@color/white_30_transparent</item>
+        <item name="miui:overlayBackground">@drawable/alphabet_indexer_overlay</item>
+        <item name="miui:overlayMarginTop">@dimen/alphabet_indexer_overlay_margin_top</item>
+    </style>
+    <style name="ErrorMsgTitle">
+        <item name="android:textSize">@dimen/error_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/error_margin_top</item>
+        <item name="android:text">@string/music_browser_label</item>
+    </style>
+    <style name="CategorySeparatorStyle">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="CategoryNumStyle">
+        <item name="android:textSize">@dimen/category_num_size</item>
+        <item name="android:textColor">@color/white_30_transparent</item>
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="PlaylistItemStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="PlaylistItemTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:padding">6.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="EditLableStyle">
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="ComboPreferenceTitleStyle" parent="@miui:style/V5.TextAppearance.PreferenceList" />
+    <style name="ComboPreferenceSummaryStyle" parent="@miui:style/V5.TextAppearance.List.Secondary" />
+    <style name="OnlineMoreButtonStyle">
+        <item name="android:textSize">@miui:dimen/v5_text_font_size_list_secondary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/online_more_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">bottom|right|center</item>
+        <item name="android:background">@drawable/online_more</item>
+        <item name="android:layout_marginRight">12.5dip</item>
+    </style>
+    <style name="OnlineFragmentTitleStyle" parent="@miui:style/V5.TextAppearance.List.Primary">
+        <item name="android:textSize">@dimen/online_fragment_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingLeft">12.5dip</item>
+    </style>
+    <style name="DropDownItemStyle" parent="@miui:style/V5.Widget.DropDownItem">
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="NowplayingActionBarStyle" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:displayOptions">none</item>
+    </style>
+    <style name="MovableActionBarStyle" parent="@miui:style/V5.Widget.ActionBar.Large">
+        <item name="android:background">@null</item>
+        <item name="android:height">@dimen/mainpage_action_bar_height</item>
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="MovableActionBarLayoutStyle" parent="@miui:style/V5.Widget.ActionBarMovableLayout">
+        <item name="miui:v5_over_scroll_range">@dimen/movable_action_bar_over_scroll_range</item>
+        <item name="miui:v5_scroll_range">@dimen/movable_action_bar_scroll_range</item>
+        <item name="miui:v5_initial_motion">@dimen/movable_action_bar_scroll_range</item>
+    </style>
+    <style name="TabIndicatorArrowGoneStyle" parent="@miui:style/V5.Widget.TabIndicatorArrow">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="OnlineMovableActionBarStyle" parent="@style/MovableActionBarStyle">
+        <item name="android:height">@dimen/online_movable_action_bar_height</item>
+    </style>
+    <style name="OnlineMovableActionBarLayoutStyle" parent="@style/MovableActionBarLayoutStyle">
+        <item name="miui:v5_scroll_range">@dimen/online_tab_scroll_range</item>
+        <item name="miui:v5_initial_motion">@dimen/online_tab_scroll_range</item>
+    </style>
+    <style name="EQSeekBar">
+        <item name="android:background">@drawable/eq_progress_bg</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:progressDrawable">@*android:color/transparent</item>
+        <item name="android:thumb">@drawable/eq_thumb</item>
+    </style>
+    <style name="ScanBarcodeTipsStyle">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@color/black_70_transparent</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">7.0</item>
+    </style>
+    <style name="VipRecommendButtonStyle" parent="@miui:style/V5.Widget.Button.PositiveWarn" />
+    <style name="ActionBarStyleShowCustom" parent="@miui:style/V5.Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="Theme.Dark" parent="@miui:style/V5.Theme.Dark">
+        <item name="listItemDownload">@drawable/list_download_icon_dark</item>
+        <item name="listItemFavorite">@drawable/list_item_favorite_dark</item>
+        <item name="listItemPlayIndicator">@drawable/list_item_play_indicator_dark</item>
+        <item name="listItemVod">@drawable/vod_indicator_dark</item>
+        <item name="color50Transparent">@color/white_50_transparent</item>
+        <item name="color80Transparent">@color/white_80_transparent</item>
+        <item name="listCollect">@drawable/list_collection_icon_dark</item>
+    </style>
+    <style name="Theme.Dark.NoTitle" parent="@miui:style/V5.Theme.Dark.NoTitle">
+        <item name="listItemDownload">@drawable/list_download_icon_dark</item>
+        <item name="listItemFavorite">@drawable/list_item_favorite_dark</item>
+        <item name="listItemPlayIndicator">@drawable/list_item_play_indicator_dark</item>
+        <item name="listItemVod">@drawable/vod_indicator_dark</item>
+        <item name="color50Transparent">@color/white_50_transparent</item>
+        <item name="color80Transparent">@color/white_80_transparent</item>
+        <item name="listCollect">@drawable/list_collection_icon_dark</item>
+    </style>
+    <style name="Theme.Dark.NoTitle.LandPage" parent="@style/Theme.Dark.NoTitle">
+        <item name="android:windowFullscreen">true</item>
+        <item name="miui:v5_list_view_item_bg">@drawable/music_land_divider</item>
+    </style>
+    <style name="Theme.Dark.NoTitle.Equalizer" parent="@style/Theme.Dark.NoTitle">
+        <item name="android:dropDownItemStyle">@style/DropDownItemStyle</item>
+    </style>
+    <style name="Theme.Dark.ActionBar.Overlay" parent="@miui:style/V5.Theme.Dark">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="listItemDownload">@drawable/list_download_icon_dark</item>
+        <item name="listItemFavorite">@drawable/list_item_favorite_dark</item>
+        <item name="listItemPlayIndicator">@drawable/list_item_play_indicator_dark</item>
+        <item name="listItemVod">@drawable/vod_indicator_dark</item>
+        <item name="color50Transparent">@color/white_50_transparent</item>
+        <item name="color80Transparent">@color/white_80_transparent</item>
+        <item name="listCollect">@drawable/list_collection_icon_dark</item>
+    </style>
+    <style name="Theme.Dark.ActionBar.Movable" parent="@miui:style/V5.Theme.Dark.ActionBarMovable">
+        <item name="android:windowBackground">@*android:color/black</item>
+        <item name="android:actionBarStyle">@style/MovableActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@null</item>
+        <item name="miui:v5_bottom_bar_top_line">@null</item>
+        <item name="miui:v5_tab_indicator_arrow_style">@style/TabIndicatorArrowGoneStyle</item>
+        <item name="miui:v5_tab_indicator_bg">@null</item>
+        <item name="miui:v5_top_placeholder">@drawable/v5_bottom_bar_placeholder</item>
+        <item name="miui:v5_top_placeholder_enabled">false</item>
+        <item name="miui:actionBarMovableLayoutStyle">@style/MovableActionBarLayoutStyle</item>
+        <item name="listItemDownload">@drawable/list_download_icon_dark</item>
+        <item name="listItemFavorite">@drawable/list_item_favorite_dark</item>
+        <item name="listItemPlayIndicator">@drawable/list_item_play_indicator_dark</item>
+        <item name="listItemVod">@drawable/vod_indicator_dark</item>
+        <item name="color50Transparent">@color/white_50_transparent</item>
+        <item name="color80Transparent">@color/white_80_transparent</item>
+        <item name="listCollect">@drawable/list_collection_icon_dark</item>
+    </style>
+    <style name="Theme.Dark.ActionBar.Movable.MainBrowser" parent="@style/Theme.Dark.ActionBar.Movable">
+        <item name="miui:v5_action_bar_title_layout">@layout/main_playback_browser</item>
+    </style>
+    <style name="Theme.Dark.PickerActivity" parent="@style/Theme.Dark">
+        <item name="miui:v5_bottom_bar_top_line">@null</item>
+    </style>
+    <style name="Theme.Dark.PickerActivity.HideHomeAsUp" parent="@style/Theme.Dark.PickerActivity">
+        <item name="android:homeAsUpIndicator">@null</item>
+    </style>
+    <style name="Theme.Dark.MainPage" parent="@miui:style/V5.Theme.Dark.MainPage">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="miui:v5_bottom_bar_top_line">@null</item>
+        <item name="listItemDownload">@drawable/list_download_icon_dark</item>
+        <item name="listItemFavorite">@drawable/list_item_favorite_dark</item>
+        <item name="listItemPlayIndicator">@drawable/list_item_play_indicator_dark</item>
+        <item name="listItemVod">@drawable/vod_indicator_dark</item>
+        <item name="color50Transparent">@color/white_50_transparent</item>
+        <item name="color80Transparent">@color/white_80_transparent</item>
+        <item name="listCollect">@drawable/list_collection_icon_dark</item>
+    </style>
+    <style name="Theme.Dark.MainPage.Nowplaying" parent="@style/Theme.Dark.MainPage">
+        <item name="android:actionBarStyle">@style/NowplayingActionBarStyle</item>
+        <item name="android:actionBarSize">@dimen/title_bar_large_height</item>
+    </style>
+    <style name="Theme.Light" parent="@miui:style/V5.Theme.Light">
+        <item name="listItemDownload">@drawable/list_download_icon_light</item>
+        <item name="listItemFavorite">@drawable/list_item_favorite_light</item>
+        <item name="listItemPlayIndicator">@drawable/list_item_play_indicator_light</item>
+        <item name="listItemVod">@drawable/vod_indicator_light</item>
+        <item name="color50Transparent">@color/black_50_transparent</item>
+        <item name="color80Transparent">@color/black_80_transparent</item>
+        <item name="listCollect">@drawable/list_collection_icon_light</item>
+    </style>
+    <style name="Theme.Light.Online" parent="@style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBarStyleShowCustom</item>
+    </style>
+    <style name="Theme.Light.ActionBar.Movable" parent="@miui:style/V5.Theme.Light.ActionBarMovable">
+        <item name="android:actionBarStyle">@style/OnlineMovableActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@null</item>
+        <item name="miui:v5_action_bar_title_layout">@layout/movable_action_bar_container</item>
+        <item name="miui:v5_tab_bg">@null</item>
+        <item name="miui:v5_tab_indicator_arrow_style">@style/TabIndicatorArrowGoneStyle</item>
+        <item name="miui:v5_tab_indicator_bg">@null</item>
+        <item name="miui:actionBarMovableLayoutStyle">@style/OnlineMovableActionBarLayoutStyle</item>
+        <item name="listItemDownload">@drawable/list_download_icon_light</item>
+        <item name="listItemFavorite">@drawable/list_item_favorite_light</item>
+        <item name="listItemPlayIndicator">@drawable/list_item_play_indicator_light</item>
+        <item name="listItemVod">@drawable/vod_indicator_light</item>
+        <item name="color50Transparent">@color/black_50_transparent</item>
+        <item name="color80Transparent">@color/black_80_transparent</item>
+        <item name="listCollect">@drawable/list_collection_icon_light</item>
+    </style>
+    <style name="Theme.Light.Settings" parent="@miui:style/V5.Theme.Light.Settings" />
+    <style name="Theme.Light.Dialog" parent="@miui:style/V5.Theme.Light.Dialog" />
+    <style name="Theme.IconPanel" parent="@miui:style/V5.Theme.IconPanel" />
+</resources>

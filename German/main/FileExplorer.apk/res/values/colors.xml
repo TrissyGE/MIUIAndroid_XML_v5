@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow">#fffff000</color>
+    <color name="gray">#ffa6a6a0</color>
+    <color name="orange">#ffff9900</color>
+    <color name="deepcolor">#fffaaa5f</color>
+    <color name="shadowcolor">#ff333333</color>
+    <color name="naming">#ffababab</color>
+    <color name="red">#ffff0000</color>
+    <color name="background">#ff272727</color>
+    <color name="orange_yellow">#ff9b9ba0</color>
+    <color name="empty_text_color">#ffc4c4c4</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="text_color_yellow">#fff05000</color>
+    <color name="background_main">#ffefefef</color>
+    <color name="background_white">#ffe0e0e8</color>
+    <color name="background_blue">#ff70a8f0</color>
+    <color name="primary_tab_text_color">#ff000000</color>
+    <item type="color" name="primary_tab_text_pressed_color">@*android:color/white</item>
+    <color name="primary_tab_text_selected_color">#ffff7e00</color>
+    <color name="clean_title_color">#ffdd2020</color>
+    <color name="clean_message_color">#ff707070</color>
+    <color name="bottom_button_text_color">#cc000000</color>
+    <color name="kuaipan_supply_text_color">#ff787878</color>
+    <color name="kuaipan_user_guide_install_message_text_color">#ffaaadb0</color>
+    <color name="ip_address_text_color">#ffffffff</color>
+    <color name="remote_control_button_text_color">#80000000</color>
+    <color name="layer_view_color">#c0cae1b5</color>
+    <color name="user_guide_background">#ff35373e</color>
+    <color name="already_used_background_color">#ff3279c9</color>
+    <color name="can_be_released_background_color">#ffc01c1e</color>
+    <color name="release_space_color">#ffff2400</color>
+    <color name="cleanup_indication_color">#e5ffffff</color>
+    <color name="cleanup_indication_shadow_color">#33000000</color>
+    <color name="garbage_cleanup_item_color">#ffd9d9d9</color>
+    <color name="garbage_cleanup_count_down_indication_color">#ffb02020</color>
+    <color name="signin_success_background">#b2000000</color>
+</resources>
