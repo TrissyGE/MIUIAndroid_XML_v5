@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="drawable" name="action_button_search">@miui:drawable/ic_menu_search</item>
-    <item type="drawable" name="action_button_delete">@miui:drawable/v5_bottom_bar_delete_icon_dark</item>
-    <item type="drawable" name="action_button_edit">@miui:drawable/v5_bottom_bar_edit_icon_light</item>
-    <item type="drawable" name="arrow_right">@miui:drawable/v5_arrow_right</item>
-</resources>
