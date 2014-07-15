@@ -2,21 +2,21 @@
 <resources>
     <string-array name="channel_tabs">
         <item>Hot</item>
-        <item>Rank</item>
-        <item>Newest</item>
+        <item>Rang</item>
+        <item>New</item>
     </string-array>
     <string-array name="channel_featured_tabs">
         <item>Chosen</item>
-        <item>Rank</item>
-        <item>Newest</item>
+        <item>Rang</item>
+        <item>New</item>
     </string-array>
     <string-array name="home_tabs">
         <item>Online</item>
-        <item>Local</item>
+        <item>Lokal</item>
     </string-array>
     <string-array name="series_detail_tabs">
         <item>Episode</item>
-        <item>Summary</item>
+        <item>Zusammenfassung</item>
     </string-array>
     <string-array name="addon_list_tabs">
         <item>All Specials</item>
